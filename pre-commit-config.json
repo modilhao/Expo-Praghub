@@ -1,0 +1,82 @@
+{
+  "project_type": "web",
+  "performance": {
+    "max_execution_time": 30,
+    "parallel_workers": 4,
+    "cache_enabled": true,
+    "cache_ttl": 3600
+  },
+  "checks": {
+    "html": {
+      "enabled": true,
+      "rules": {
+        "validate_syntax": true,
+        "check_accessibility": true,
+        "optimize_images": true,
+        "minify_suggestions": true,
+        "semantic_html": true
+      },
+      "ignore_patterns": ["*.min.html", "dist/**"]
+    },
+    "css": {
+      "enabled": true,
+      "rules": {
+        "validate_syntax": true,
+        "check_unused_selectors": true,
+        "optimize_properties": true,
+        "consolidate_rules": true,
+        "check_performance": true
+      },
+      "ignore_patterns": ["*.min.css", "vendor/**", "node_modules/**"]
+    },
+    "javascript": {
+      "enabled": true,
+      "rules": {
+        "validate_syntax": true,
+        "check_complexity": true,
+        "detect_unused_vars": true,
+        "optimize_loops": true,
+        "check_async_patterns": true,
+        "bundle_analysis": true
+      },
+      "ignore_patterns": ["*.min.js", "dist/**", "build/**"]
+    },
+    "images": {
+      "enabled": true,
+      "rules": {
+        "check_optimization": true,
+        "validate_formats": true,
+        "size_analysis": true,
+        "compression_suggestions": true
+      },
+      "max_size_kb": 500,
+      "preferred_formats": ["webp", "avif", "svg"]
+    }
+  },
+  "optimization_suggestions": {
+    "code_simplification": {
+      "remove_dead_code": true,
+      "consolidate_functions": true,
+      "optimize_selectors": true,
+      "reduce_nesting": true
+    },
+    "performance": {
+      "lazy_loading": true,
+      "resource_hints": true,
+      "critical_css": true,
+      "script_optimization": true
+    }
+  },
+  "reporting": {
+    "format": "detailed",
+    "show_metrics": true,
+    "save_history": true,
+    "export_json": false
+  },
+  "thresholds": {
+    "max_file_size_kb": 100,
+    "max_css_selectors": 4000,
+    "max_js_complexity": 10,
+    "min_performance_score": 85
+  }
+}
