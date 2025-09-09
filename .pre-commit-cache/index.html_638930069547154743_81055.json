@@ -1,0 +1,33 @@
+{
+    "performance":  {
+                        "issues":  [
+
+                                   ],
+                        "score":  87
+                    },
+    "timestamp":  {
+                      "value":  "\/Date(1757420973394)\/",
+                      "DisplayHint":  {
+                                          "value":  2,
+                                          "Value":  "DateTime"
+                                      },
+                      "DateTime":  "terça-feira, 9 de setembro de 2025 09:29:33"
+                  },
+    "syntax":  {
+                   "valid":  true,
+                   "errors":  [
+
+                              ],
+                   "warnings":  [
+                                    "Imagens sem atributo alt encontradas"
+                                ],
+                   "optimizations":  [
+                                         "Considere mover estilos inline para CSS externo"
+                                     ]
+               },
+    "type":  "HTML",
+    "file":  "D:\\Apps\\Expo-Praghub\\index.html",
+    "PSComputerName":  "localhost",
+    "RunspaceId":  "2e33bf75-84da-4937-9ad4-fa9113f32b35",
+    "PSShowComputerName":  false
+}
